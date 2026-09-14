@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nebula books</title>
-    <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header id="inicio">
@@ -17,14 +19,15 @@
                 <li><a href="#inicio">Inicio</a></li>
                 <li><a href="#productos">Productos</a></li>
                 <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#resenias">Reseñas</a></li>
             </ul>
         </nav>
     </header>
     
     <main>
-        <div class="contenedor-productos">
-            <section id="productos">
-                <h2>Productos</h2>
+        <section id="productos">
+            <h2>Productos</h2>
+            <div class="contenedor-productos">
                 <article class="producto">
                     <img src="assets/hyperion.jpg" alt="Portada del libro Hyperion">
                     <h3>Hyperion</h3>
@@ -54,12 +57,37 @@
                         </p>
                         <button>Agregar al carrito</button>
                     </article>
+                </div>
+                
+                
+                
+            </section>
+            
+            
+            <section id="resenias">
+                <h2>Reseñas</h2>
+                
+                <div class="contenedor-reseñas">
                     
+                    <article class="reseña">
+                        <h3>Nahuel Gonzalez</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus aspernatur accusantium voluptates doloribus ipsa pariatur tenetur minima quisquam amet. Suscipit libero necessitatibus blanditiis in odio ullam harum quidem quis consequuntur!</p>
+                    </article>
                     
+                    <article class="reseña">
+                        <h3>Jimena Perez Avila</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus aspernatur accusantium voluptates doloribus ipsa pariatur tenetur minima quisquam amet. Suscipit libero necessitatibus blanditiis in odio ullam harum quidem quis consequuntur!</p>
+                    </article>
                     
+                    <article class="reseña">
+                        <h3>Carolina Lopez Cruz</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus aspernatur accusantium voluptates doloribus ipsa pariatur tenetur minima quisquam amet. Suscipit libero necessitatibus blanditiis in odio ullam harum quidem quis consequuntur!</p>
+                    </article>
                     
-                </section>
-            </div>
+                    <!-- dos más -->
+                    
+                </div>
+            </section>
             <section id="contacto">
                 <h2>Contacto</h2>
                 <form
@@ -83,6 +111,15 @@
         </section>
     </main>
     <footer>
+        <footer>
+            <p>© 2026 Nebula Books</p>
+            
+            <div class="redes-sociales">
+                <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://x.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+        </footer>
     </footer>
 </body>
 </html>

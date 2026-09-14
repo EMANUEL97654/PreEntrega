@@ -11,7 +11,7 @@ header{
     background-color: rgba(26, 26, 6, 0.65);
     padding: 20px;
     display: flex;
-    justify-content: space-evenly;
+    align-items: center;
 }
 
 nav{
@@ -27,6 +27,10 @@ nav > ul{
 nav > ul > li > a{
     text-decoration: none;
     color: chartreuse;
+}
+
+nav > ul > li > a:hover{
+    color: violet;
 }
 
 .logo{
@@ -56,4 +60,82 @@ article > img{
 
 #productos{
     padding: 2rem;
+}
+
+.contenedor-reseñas{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+}
+
+.reseña{
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+#contacto{
+    padding: 2rem;
+}
+
+form{
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form label{
+    display: block;
+    margin-bottom: 1rem;
+}
+
+form input,
+form textarea{
+    width: 100%;
+    padding: 0.75rem;
+}
+
+footer{
+    background-color: rgba(26,26,6,0.65);
+    padding: 2rem;
+    text-align: center;
+}
+
+footer p{
+    color: white;
+}
+
+.redes-sociales{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.redes-sociales a{
+    color: chartreuse;
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+.redes-sociales a:hover{
+    color:rgb(25, 208, 232)
+}
+
+@media (max-width: 768px) {
+    .contenedor-reseñas{
+        grid-template-columns: 1fr;
+    }
+
+    header{
+        flex-direction: column;
+    }
+
+    nav > ul{
+        flex-direction: column;
+    }
+
+    #contacto{
+        padding: 1rem;
+    }
 }
