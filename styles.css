@@ -32,3 +32,28 @@ nav > ul > li > a{
 .logo{
     width: 200px;
 }
+
+.contenedor-productos{
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.producto{
+    width: 300px;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+article > img{
+    width: 100%;
+    border-radius: 8px;
+}
+
+#productos{
+    padding: 2rem;
+}
