@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nebula books</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header id="inicio">
@@ -18,32 +22,67 @@
     </header>
     
     <main>
-        <section id="productos">
-            
+        <div class="contenedor">
+            <section id="productos">
+                <h2>Productos</h2>
+                <article>
+                    <img src="assets/hyperion.jpg" alt="Portada del libro Hyperion">
+                    <h3>Hyperion</h3>
+                    <p class="descripcion">En el mundo llamado Hiperión, más allá de la ley de la Hegemonía del Hombre, aguarda la criatura conocida como el Alcaudón. Hay quienes lo veneran. Hay quienes lo temen. Y hay quienes han jurado destruirlo. En el Valle de las Tumbas del Tiempo, donde enormes y ominosas estructuras retroceden en el tiempo, el Alcaudón los espera a todos. En vísperas del Armagedón, con toda la galaxia en guerra, siete peregrinos emprenden un último viaje a Hiperión en busca de respuestas a los enigmas sin resolver de sus vidas. Cada uno lleva consigo una esperanza desesperada y un terrible secreto. Y uno de ellos podría tener el destino de la humanidad en sus manos.</p>
+                    <p class="precio">$125</p>
+                    <button>Agregar al carrito</button>
+                </article>
+                <article>
+                    <img src="assets/infancia.jpg" alt="portada de la edicion española de el fin de la infancia">
+                    <h3>El fin de la infancia</h3>
+                    <p class="descripcion">Enormes naves extraterrestres surgen de la nada y se posan sobre las principales ciudades del planeta…
+                        Todos reconocemos esto como un recurso múltiples veces utilizado como preludio a una invasión extraterrestre. En esta ocasión, en la obra de Arthur C. Clarke, con la llegada a la Tierra de una raza extraterrestre bautizada como superseñores, la humanidad conocerá sus mejores tiempos. Bajo su tutela, se acabará con las guerras, el hambre, las fronteras…Pero algo no va bien, nadie ha visto nunca a un superseñor y esto hace que surjan grupos radicales contrarios a la política de los superseñores. Karellen, interlocutor por parte de los superseñores, hace público que en cincuenta años se presentarán a la humanidad, cuando ésta esté preparada…</p>
+                        <p class="precio">$150</p>
+                        <button>Agregar al carrito</button>
+                    </article>
+                    
+                    <article>
+                        <img src="assets/ubik.jpg" alt="Portada de la edicion de la editorial gollancz de Ubik">
+                        <h3>Ubik</h3>
+                        <p class="descripcion">
+                            Glen Runciter está muerto. ¿O lo están todos los demás? Lo que es seguro es que alguien ha muerto en una explosión organizada por los competidores de Runciter. De hecho, sus empleados asisten a un funeral. Pero durante el duelo comienzan a recibir mensajes descorcentantes, e incluso morbosos, de su jefe. Y el mundo a su alrededor comienza a desmoronarse de un modo que sugiere que a ellos tampoco les queda mucho tiempo.
+                            
+                            Esta mordaz comedia metafísica de muerte y salvación (que podrá llevar un cómodo envase) es un tour de force de amenaza paranoica y comedia absurda, en la cual los muertos ofrecen consejos comerciales, compran su siguiente reencarnación y corren el riesgo continuo de volver a morir.
+                        </p>
+                        <p class="precio">
+                            $100
+                        </p>
+                        <button>Agregar al carrito</button>
+                    </article>
+                    
+                    
+                    
+                    
+                </section>
+            </div>
+            <section id="contacto">
+                <h2>Contacto</h2>
+                <form
+                action="https://formspree.io/f/maeygzyw"
+                method="POST"
+                >
+                <label for="nombre">
+                    Nombre:
+                    <input type="text" name="nombre" id="nombre">
+                </label>
+                <label for="email">
+                    Email:
+                    <input type="email" name="email" id="email">
+                </label>
+                <label for="mensaje">
+                    Mensaje:
+                    <textarea name="mensaje" id="mensaje"></textarea>
+                </label>
+                <button type="submit">Send</button>
+            </form>
         </section>
-        <section id="contacto">
-            <h2>Contacto</h2>
-            <form
-            action="https://formspree.io/f/maeygzyw"
-            method="POST"
-            >
-            <label for="nombre">
-                Nombre:
-                <input type="text" name="nombre" id="nombre">
-            </label>
-            <label for="email">
-                Email:
-                <input type="email" name="email" id="email">
-            </label>
-            <label for="mensaje">
-                Mensaje:
-                <textarea name="mensaje" id="mensaje"></textarea>
-            </label>
-            <button type="submit">Send</button>
-        </form>
-    </section>
-</main>
-<footer>
-</footer>
+    </main>
+    <footer>
+    </footer>
 </body>
 </html>
