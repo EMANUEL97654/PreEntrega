@@ -9,8 +9,10 @@ body{
     color: #f5f5f5;
 }
 
+/* HEADER */
+
 header{
-    background-color: rgba(26, 26, 6, 0.65);
+    background-color: rgba(11, 16, 32, 0.95);
     padding: 20px;
     display: flex;
     align-items: center;
@@ -28,15 +30,21 @@ nav > ul{
 
 nav > ul > li > a{
     text-decoration: none;
-    color: chartreuse;
+    color: #c4b5fd;
 }
 
 nav > ul > li > a:hover{
-    color: violet;
+    color: #67e8f9;
 }
 
 .logo{
     width: 200px;
+}
+
+/* PRODUCTOS */
+
+#productos{
+    padding: 2rem;
 }
 
 .contenedor-productos{
@@ -49,10 +57,15 @@ nav > ul > li > a:hover{
 .producto{
     width: 300px;
     padding: 1rem;
-    border: 1px solid #ccc;
     border-radius: 12px;
-    background-color: white;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.producto,
+.reseña{
+    background-color: #161b2e;
+    color: #f5f5f5;
+    border: 1px solid #6c63ff;
+    box-shadow: 0 4px 15px rgba(108, 99, 255, 0.25);
 }
 
 article > img{
@@ -60,7 +73,48 @@ article > img{
     border-radius: 8px;
 }
 
-#productos{
+.producto h3{
+    color: #c4b5fd;
+    font-size: 1.4rem;
+}
+
+.precio{
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #67e8f9;
+}
+
+.producto button{
+    width: 100%;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 8px;
+    background-color: #6c63ff;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.producto button:hover{
+    background-color: #67e8f9;
+}
+
+/* MULTIMEDIA */
+
+#multimedia{
+    padding: 2rem;
+    text-align: center;
+}
+
+#multimedia video{
+    width: 100%;
+    max-width: 900px;
+    border-radius: 12px;
+}
+
+/* RESEÑAS */
+
+#resenias{
     padding: 2rem;
 }
 
@@ -72,15 +126,10 @@ article > img{
 
 .reseña{
     padding: 1rem;
-    border: 1px solid #ccc;
     border-radius: 12px;
-    background-color: white;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
 }
 
-#resenias{
-    padding: 2rem;
-}
+/* CONTACTO */
 
 #contacto{
     padding: 2rem;
@@ -100,33 +149,28 @@ form input,
 form textarea{
     width: 100%;
     padding: 0.75rem;
-}
-
-footer{
-    background-color: rgba(26,26,6,0.65);
-    padding: 2rem;
-    text-align: center;
-}
-
-footer p{
+    margin-top: 0.5rem;
+    border: 1px solid #6c63ff;
+    border-radius: 8px;
+    background-color: #161b2e;
     color: white;
 }
 
-.redes-sociales{
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
+form button{
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    background-color: #6c63ff;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
 }
 
-.redes-sociales a{
-    color: chartreuse;
-    font-size: 2rem;
-    text-decoration: none;
+form button:hover{
+    background-color: #67e8f9;
 }
 
-.redes-sociales a:hover{
-    color:rgb(25, 208, 232)
-}
+/* TABLA */
 
 table{
     width: 100%;
@@ -143,7 +187,7 @@ td{
 }
 
 th{
-    background-color: rgba(26, 26, 6, 0.65);
+    background-color: #161b2e;
     color: white;
 }
 
@@ -151,24 +195,38 @@ th{
     overflow-x: auto;
 }
 
-#multimedia{
+/* FOOTER */
+
+footer{
+    background-color: rgba(11, 16, 32, 0.95);
     padding: 2rem;
     text-align: center;
 }
 
-#multimedia video{
-    width: 100%;
-    max-width: 900px;
-    border-radius: 12px;
+footer p{
+    color: white;
 }
 
-.producto,
-.reseña{
-    background-color: #161b2e;
-    color: #f5f5f5;
+.redes-sociales{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
 }
 
-@media (max-width: 768px) {
+.redes-sociales a{
+    color: #c4b5fd;
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+.redes-sociales a:hover{
+    color: #67e8f9;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px){
+
     .contenedor-reseñas{
         grid-template-columns: 1fr;
     }
@@ -179,7 +237,7 @@ th{
 
     nav > ul{
         flex-direction: column;
-        padding:0;
+        padding: 0;
         gap: 1rem;
         align-items: center;
     }
