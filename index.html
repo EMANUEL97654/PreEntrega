@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -20,6 +20,7 @@
                 <li><a href="#productos">Productos</a></li>
                 <li><a href="#contacto">Contacto</a></li>
                 <li><a href="#resenias">Reseñas</a></li>
+                <li><a href="#multimedia">Multimedia</a></li>
             </ul>
         </nav>
     </header>
@@ -33,7 +34,7 @@
                     <h3>Hyperion</h3>
                     <p class="descripcion">En el mundo llamado Hiperión, más allá de la ley de la Hegemonía del Hombre, aguarda la criatura conocida como el Alcaudón. Hay quienes lo veneran. Hay quienes lo temen. Y hay quienes han jurado destruirlo. En el Valle de las Tumbas del Tiempo, donde enormes y ominosas estructuras retroceden en el tiempo, el Alcaudón los espera a todos. En vísperas del Armagedón, con toda la galaxia en guerra, siete peregrinos emprenden un último viaje a Hiperión en busca de respuestas a los enigmas sin resolver de sus vidas. Cada uno lleva consigo una esperanza desesperada y un terrible secreto. Y uno de ellos podría tener el destino de la humanidad en sus manos.</p>
                     <p class="precio">$125</p>
-                    <button>Agregar al carrito</button>
+                    <button><i class="fa-solid fa-cart-shopping"></i>Agregar al carrito</button>
                 </article>
                 <article class="producto">
                     <img src="assets/infancia.jpg" alt="portada de la edicion española de el fin de la infancia">
@@ -41,7 +42,7 @@
                     <p class="descripcion">Enormes naves extraterrestres surgen de la nada y se posan sobre las principales ciudades del planeta…
                         Todos reconocemos esto como un recurso múltiples veces utilizado como preludio a una invasión extraterrestre. En esta ocasión, en la obra de Arthur C. Clarke, con la llegada a la Tierra de una raza extraterrestre bautizada como superseñores, la humanidad conocerá sus mejores tiempos. Bajo su tutela, se acabará con las guerras, el hambre, las fronteras…Pero algo no va bien, nadie ha visto nunca a un superseñor y esto hace que surjan grupos radicales contrarios a la política de los superseñores. Karellen, interlocutor por parte de los superseñores, hace público que en cincuenta años se presentarán a la humanidad, cuando ésta esté preparada…</p>
                         <p class="precio">$150</p>
-                        <button>Agregar al carrito</button>
+                        <button><i class="fa-solid fa-cart-shopping"></i>Agregar al carrito</button>
                     </article>
                     
                     <article class="producto">
@@ -55,12 +56,19 @@
                         <p class="precio">
                             $100
                         </p>
-                        <button>Agregar al carrito</button>
+                        <button><i class="fa-solid fa-cart-shopping"></i>Agregar al carrito</button>
                     </article>
                 </div>
                 
                 
                 
+            </section>
+            
+            <section id="multimedia">
+                <h2>Conocé Nebula Books</h2>
+                <video controls>
+                    <source src="assets/video.mp4" type="video/mp4">
+                </video>                
             </section>
             
             
@@ -96,11 +104,11 @@
                 >
                 <label for="nombre">
                     Nombre:
-                    <input type="text" name="nombre" id="nombre">
+                    <input type="text" name="nombre" id="nombre" required>
                 </label>
                 <label for="email">
                     Email:
-                    <input type="email" name="email" id="email">
+                    <input type="email" name="email" id="email" required>
                 </label>
                 <label for="mensaje">
                     Mensaje:
@@ -108,18 +116,52 @@
                 </label>
                 <button type="submit">Send</button>
             </form>
+            
+            <h3>Contactos recibidos</h3>
+            <div class="contenedor-tabla">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Email</th>
+                            <th>Motivo</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Emanuel Gonzalez</td>
+                            <td>emanuel@gmail.com</td>
+                            <td>Consulta por un libro</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Nahuel Gonzalez</td>
+                            <td>nahuel@gmail.com</td>
+                            <td>Consulta por envio</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Jimenez Perez Avila</td>
+                            <td>jime@gmail.com</td>
+                            <td>Consulta por precio mayorista</td>
+                        </tr>
+                        
+                        <tr>
+                            <td colspan="3">Total de consultas: 3</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </section>
     </main>
     <footer>
-        <footer>
-            <p>© 2026 Nebula Books</p>
-            
-            <div class="redes-sociales">
-                <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-                <a href="https://x.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a>
-            </div>
-        </footer>
+        <p>© 2026 Nebula Books</p>
+        
+        <div class="redes-sociales">
+            <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://x.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+        </div>
     </footer>
 </body>
 </html>
